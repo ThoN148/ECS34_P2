@@ -1,6 +1,18 @@
 CDSVWriter MarkDown
 ===================
 
+class CDSVWriter{
+    private:
+        struct SImplementation;
+        std::unique_ptr<SImplementation> DImplementation;
+
+    public:
+        CDSVWriter(std::shared_ptr< CDataSink > sink, char delimiter, bool quoteall = false);
+        ~CDSVWriter();
+
+        bool WriteRow(const std::vector<std::string> &row);
+};
+
 struct SImplementation;
 - A structure that allows you to create variables and function needed for CDSVReaer
 
