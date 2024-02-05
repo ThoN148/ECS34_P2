@@ -3,13 +3,13 @@ CDSVReader Mark Down
 
 class CDSVReader{
     private:
-        // A structure that allows you to create variables and function needed for CDSVReaer
+        *A structure that allows you to create variables and function needed for CDSVReaer
         struct SImplementation;
 
-        // Dynimcally allocating the same typing as Simplementation to Dimplemetation
+        *Dynimcally allocating the same typing as Simplementation to Dimplemetation
         std::unique_ptr<SImplementation> DImplementation;
 
-        // Example: This structure can include shared pointer varaible, character varaible, and the bool functions.
+        *Example: This structure can include shared pointer varaible, character varaible, and the bool functions.
 
     // Public domain of the class
     public:
