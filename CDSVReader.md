@@ -13,22 +13,19 @@ class CDSVReader{
         bool ReadRow(std::vector<std::string> &row);
 };
 
-class CDSVReader{
-    private:
-        *A structure that allows you to create variables and function needed for CDSVReaer
-        struct SImplementation;
 
-        *Dynimcally allocating the same typing as Simplementation to Dimplemetation
-        std::unique_ptr<SImplementation> DImplementation;
+*A structure that allows you to create variables and function needed for CDSVReaer
+- struct SImplementation;
 
-        *Example: This structure can include shared pointer varaible, character varaible, and the bool functions.
+*Dynimcally allocating the same typing as Simplementation to Dimplemetation
+- std::unique_ptr<SImplementation> DImplementation;
 
-    // Public domain of the class
-    public:
-        // CDSV Reader uses two parameter for the function. One being a shared pointer to the source of information, and another is the delimiter. Delimiter is the character that you would typically use to differentiate the text data.
-        // Ex. Source data is "Apples,Bananas,Grapes,Pears" with a delimiter character of ","
-        // Constructor for the CDSVReader
-        CDSVReader(std::shared_ptr< CDataSource > src, char delimiter);
+*Example: This structure can include shared pointer varaible, character varaible, and the bool functions.
+
+*CDSV Reader uses two parameter for the function. One being a shared pointer to the source of information, and another is the delimiter. Delimiter is the character that you would typically use to differentiate the text data.
+*Ex. Source data is "Apples,Bananas,Grapes,Pears" with a delimiter character of ","
+*Constructor for the CDSVReader
+- CDSVReader(std::shared_ptr< CDataSource > src, char delimiter);
 
         // Removes / Deletes the objects within the class if they happen to be out of range
         // Destructor for the CDSVReader
