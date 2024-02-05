@@ -17,6 +17,7 @@ class CXMLReader{
 struct SImplementation & std::unique_ptr< SImplementation > DImplementation
 - A structure that allows you to create variables and function needed for CXMLReader
 - Creates varaibles and handlers for XML such as start element, character data, end element, which include their callbacks. This also gold the source variable, parser.
+
 EX:
 
 SImplementation(std::shared_ptr< CDataSource > src){
