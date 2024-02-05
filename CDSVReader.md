@@ -14,10 +14,10 @@ class CDSVReader{
 };
 
 - struct SImplementation;
-A structure that allows you to create variables and function needed for CDSVReaer
+*A structure that allows you to create variables and function needed for CDSVReaer
 
 - std::unique_ptr<SImplementation> DImplementation;
-Dynimcally allocating the same typing as Simplementation to Dimplemetation
+*Dynimcally allocating the same typing as Simplementation to Dimplemetation
 
 - Example: This structure can include shared pointer varaible, character varaible, and the bool functions.
 
