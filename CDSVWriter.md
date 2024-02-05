@@ -14,7 +14,7 @@ class CDSVWriter{
 };
 
 struct SImplementation;
-- A structure that allows you to create variables and function needed for CDSVReaer
+- A structure that allows you to create variables and function needed for CDSVReader
 
 std::unique_ptr<SImplementation> DImplementation;
 - Dynimcally allocating the same typing as Simplementation to Dimplemetation
