@@ -40,3 +40,4 @@ Test Ex:
     EXPECT_TRUE(Writer.WriteEntity({SXMLEntity::EType::EndElement, "sanity", {}}));
     EXPECT_EQ(OutputStream->String(), "<sanity attr=\"I'm losing it!\"></sanity>");
 
+Issues: Beaware of the special character mentions in XMLReader. Character like < > " ' and & causes issues when trying to copy them down in XML. You would have to swap them out accordingly in order for them to be printed out correctly. [Guidance](https://stackoverflow.com/questions/1091945/what-characters-do-i-need-to-escape-in-xml-documents#:~:text=XML%20escape%20characters,the%20special%20character%20is%20used.)
