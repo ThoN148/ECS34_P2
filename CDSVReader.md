@@ -13,14 +13,13 @@ class CDSVReader{
         bool ReadRow(std::vector<std::string> &row);
 };
 
-
-*A structure that allows you to create variables and function needed for CDSVReaer
 - struct SImplementation;
+A structure that allows you to create variables and function needed for CDSVReaer
 
-*Dynimcally allocating the same typing as Simplementation to Dimplemetation
 - std::unique_ptr<SImplementation> DImplementation;
+Dynimcally allocating the same typing as Simplementation to Dimplemetation
 
-*Example: This structure can include shared pointer varaible, character varaible, and the bool functions.
+- Example: This structure can include shared pointer varaible, character varaible, and the bool functions.
 
 *CDSV Reader uses two parameter for the function. One being a shared pointer to the source of information, and another is the delimiter. Delimiter is the character that you would typically use to differentiate the text data.
 *Ex. Source data is "Apples,Bananas,Grapes,Pears" with a delimiter character of ","
